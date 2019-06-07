@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar class="headerbgc">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Modules
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content>
+  <ion-toolbar class="bordernew">    
+    <p class="fontq">Modules</p>
+    <p>JavaScript Module pattern provides a way to wrap public, private methods &#40;and variable&#41; into a single entity. The functions or variables defined in a module are not visible outside unless we explicitly export them.</p>
+
+    <p class="fontqq">Module basics</p>
+    <p>ES6 modules are stored in files. There's no special module keyword.</p>
+    <p>ES6 modules are automatically strict-mode code, even if we don't write <code>"use-strict"</code>. We can use <code>import</code> and <code>export</code> in modules.</p>
+
+    <p class="fontqq">Basic usage</p>
+    <p>Here very basic examples for module export and import. Here we are going to create two utility functions.</p>
+    <p> <code>generateRandom&#40;&#41;</code> Generates a random number.</p>
+    <p> <code>sum&#40;&#41; </code> Adds two numbers.</p>
+
+    <div class="boxed">
+      <p><span class="br">&#47;&#47; utils.js</span></p>
+      <p><span class="bl"><b>function </b></span><span class="re"><b>getRandomNumber</b></span><span class="bl">&#40;&#41; &#123;</span></p>
+      <p><span class="bl"><b>return </b></span><span class="gr">Math</span><span class="bl">.random&#40;&#41;;</span></p>
+      <p><span class="bl">&#125;</span></p>
+      <p><span class="bl"><b>function </b></span><span class="re"><b>getSum</b></span><span class="bl">&#40;a,b&#41; &#123;</span></p>
+      <p><span class="bl"><b>return </b> a &#43; b;</span></p>
+      <p><span class="bl">&#125;</span></p>
+      <p><span class="bl"><b>export </b> &#123; getRandomNumber, getSum &#125;</span></p>
+    </div>
+    
+    <p>We can also rename the values while exporting like this:</p>
+    <div class="boxed">
+      <p><span class="br">&#47;&#47; utils.js</span></p>
+      <p><span class="br">&#47;&#47; Rest of the declaartion...</span></p>
+      <p><span class="bl"><b>export </b>&#123; getRandomNumber <b>as</b> random, getSum <b>as</b> doSum &#125;</span></p>
+    </div>
+
+    <p>Using above utils modules in our main javascript file</p>
+    <div class="boxed">
+        <p><span class="br">&#47;&#47; main.js</span></p>
+      <p><span class="bl"><b>export </b>&#123; getRandomNumber <b>as</b> random, getSum <b>as</b> doSum &#125;</span></p>
+      <p><span class="bl"><b>import </b> &#123; getRandomNumber, getSum &#125; </span><b>from </b><span class="re">'.&#47;utils'</span><span class="bl">;</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40;getRandomNumber&#40;&#41;&#41; </span><span class="br">&#47;&#47; some random number</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40;getSum&#40;<span class="re">2</span><span class="bl">,</span><span class="re">5</span>&#41;&#41; </span><span class="br">&#47;&#47; 7</span></p>      
+    </div>
+
+
+    <!-- <div class="sharebox1">
+      <p>New version of ECMAScript app available now&#33;.</p>
+      <p>It contains all ES6 features with browser agents support details.</p>
+      <p class="sharebox2">Check it in play store</p>
+    </div>
+  
+    <div class="sharebox1 sharebox2">
+      Visit us
+    </div> -->
+  </ion-toolbar>
+</ion-content>

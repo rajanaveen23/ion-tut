@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar class="headerbgc">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Destructuring
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar class="bordernew">    
+    <p class="fontq">Destructuring assignment</p>
+    <p>Destructuring is a convenient way of extracting values from data stored in &#40;possibly nested&#41; objects and Arrays.</p>
+
+    <div class="boxed">
+      <p><span class="bl"><b>var </b>a, b, rest;</span></p>
+      <p><span class="bl">[a, b] = [</span><span class="re">1</span><span class="bl">, </span><span class="re">2</span><span class="bl">];</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40'a&#41;;</span><span class="br">&#47;&#47; 1</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40'b&#41;;</span><span class="br">&#47;&#47; 2</span></p>
+      <br>
+
+    </div>
+    <p><span class="bl">[a, b, ...rest] = [</span><span class="re">1</span><span class="bl">, </span><span class="re">2</span><span class="re">3</span><span class="bl">, </span><span class="re">4</span><span class="bl">, </span><span class="re">5</span><span class="bl">];</span></p>
+    <p><span class="gr">console</span><span class="bl">.log&#40'a&#41;;</span><span class="br">&#47;&#47; 1</span></p>
+    <p><span class="gr">console</span><span class="bl">.log&#40'b&#41;;</span><span class="br">&#47;&#47; 2</span></p>
+    <p><span class="gr">console</span><span class="bl">.log&#40'rest&#41;;</span><span class="br">&#47;&#47; [3,4,5]</span></p>
+  
+    <p class="fontqq">Object destructuring</p>
+    <p>Destructuring objects:</p>
+    <div class="boxed">
+      <p><span class="bl"><b>const </b>obj = &#123;total: </span><span class="re">42</span><span class="bl">, isValid: </span><span class="gr">true</span><span class="bl">&#125;;</span></p>
+      <p><span class="bl"><b>const </b>&#123;total, isValid: valid&#125; = obj;</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40'tot&#41;;</span><span class="br">&#47;&#47; 42</span></p>
+      <p><span class="gr">console</span><span class="bl">.log&#40'isValid&#41;;</span><span class="br">&#47;&#47; true</span></p>
+    </div>
+
+    <p>Nested object and array destructuring</p>
+    <div class="boxed">
+      <p><span class="bl"><b>var </b> metadata = &#123;</span></p>
+      <p><span class="bl">title:</span><span class="re">"Scratchpad"</span><span class="bl">,</span></p>
+      <p><span class="bl">translations: [</span></p>
+      <p><span class="bl">&#123;</span></p>
+      <p><span class="bl">last_edit:</span><span class="re">"2014-04-14T08:43:37"</span><span class="bl">,</span></p>
+      <p><span class="bl">url:</span><span class="re">"&#47;de&#47;docs&#47;Tools&#47;Scratchpad"</span><span class="bl">,</span></p>
+      <p><span class="bl">title:</span><span class="re">"JvaScript-Umgebung"</span><span class="bl">,</span></p>
+      <p><span class="bl">&#125;</span></p>
+
+    </div>
+
+  
+  
+  </ion-toolbar>
+</ion-content>

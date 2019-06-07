@@ -12,7 +12,7 @@
 <ion-content>
   <ion-toolbar class="bordernew">    
     <p class="fontq">Let</p>
-    <p>The <code>let</code> statement declares a block scope local variable &#40;npt function level scope like <span style="background-color:rgb(243, 141, 8);border-radius: 5px;color:rgb(27, 27, 107);">war</span>&#41;.</p>
+    <p>The <code>let</code> statement declares a block scope local variable &#40;not function level scope like <code>war</code>&#41;.</p>
 
     <div class="boxed">
       <p><span class="bl"><b>let </b>count = </span><span class="re">2</span><span class="bl">;</span></p>
@@ -25,7 +25,7 @@
       <p><span class="gr">console</span><span class="bl">.log&#40;count&#41;;</span><span class="br">&#47;&#47;2</span></p>
     </div>
 
-    <p>Redeclaring the same variable within the same function or block scope raises a <span style="background-color:rgb(243, 141, 8);border-radius: 5px;color:rgb(27, 27, 107);">SyntaxError</span>.</p>
+    <p>Redeclaring the same variable within the same function or block scope raises a <code>SyntaxError</code>.</p>
 
     <div class="boxed">
       <p><span class="bl"><b>let</b> count = </span><span class="re">2</span><span class="bl">;</span></p>
@@ -33,7 +33,7 @@
     </div>
 
     <p class="fontq">Hoisting</p>
-    <p>C</p>
+    <p></p>
 
     <div class="boxed">
       <p><span class="bl"><b>function</b></span><span class="re"><b>fun</b></span><span class="bl">&#40;&#41; &#123;</span></p>
@@ -43,7 +43,7 @@
       <p><span class="bl">fun&#40;&#41;;</span></p>
     </div>
 
-    <p>let and const are hoisted &#40;like var and function&#41;, but there is a period between entering scope and being declared where they cannot be accessed. This period is the <span style="background-color:rgb(243, 141, 8);border-radius: 5px;color:rgb(27, 27, 107);">temporal dead zone&#40;TDZ&#41;.</span></p>
+    <p>let and const are hoisted &#40;like var and function&#41;, but there is a period between entering scope and being declared where they cannot be accessed. This period is the <code>temporal dead zone&#40;TDZ&#41;.</code></p>
 
     <div class="boxed">
       <p><span class="bl"><b>var</b>count = </span><span class="re">1</span><span class="bl">;</span></p>
@@ -51,9 +51,9 @@
       <p><span class="bl"><b>let </b>count = </span><span class="re">4</span><span class="bl">;</span></p>
     </div>
 
-    <p>Still the above statement throwing error. Because of <span style="background-color:rgb(243, 141, 8);border-radius: 5px;color:rgb(27, 27, 107);">TDZ</span></p>
+    <p>Still the above statement throwing error. Because of <code>TDZ</code></p>
     <p class="fontqq">What is temporal dead zone &#40;TDZ&#41; in ES6</p>
-    <p>In ECMAScript 6, accessing a let or const variable before its declaration &#40;within its scope&#41; causes a <span style="background-color:rgb(243, 141, 8);border-radius: 5px;color:rgb(27, 27, 107);">ReferenceError</span></p>
+    <p>In ECMAScript 6, accessing a let or const variable before its declaration &#40;within its scope&#41; causes a <code>ReferenceError</code></p>
     <p>There are several reasons why const and let have temporal dead zones:</p>`
     
     <p class="bulletspacing"><b style="font-size:25px">&#8901;</b><b> To  catch programming errors:</b> Being able to access a variabe before its declaration is strange. Iff you do so, it is normally by accident and you should be warned about it.</p>
@@ -105,6 +105,7 @@
       <p><span class="br">&#47;&#47;3.14</span></p>
       <p><span class="br">&#47;&#47;3.14159</span></p>
       <p><span class="br">&#47;&#47;3.141</span></p>
+    </div>
     <!-- </div>
     <div class="sharebox1">
       <p>New version of ECMAScript app available now&#33;.</p>
